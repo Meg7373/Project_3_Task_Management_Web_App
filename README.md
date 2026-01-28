@@ -7,11 +7,28 @@ The overview of the project is to create a task management application that will
 
 ### Functionality of the Application
 
+The website application offers a navigation bar that allows the user to switch between the To-Do List page and the contact form page. On the To-Do List page, a to-do feature is in the center. There is a text box and an 'add' button that allows a task to be added. Underneath, is a list of the given tasks the user wants to add. Along side each task, is the 'delete' and 'complete' button. On the Contact Form page, there is a full name box for the user to type their name, an email box, comments box, and a 'submit' button.
+
+
 ### Technologies Utilized
+
+* HTML
+* CSS
+* Javascript
+* React
+* Bootstrap
 
 ### Ideas for Future Improvement
 
+1. Add emojis for user interaction when creating a to-do list.
+2. Create the ability for the user to create multiple to-do lists simultaneously.
+3. Add the ability on the contact form for the to-do list to be sent directly to the user's email.
+
 ### User Stories 
+
+1. As a parent, I want to use the to-do list for my groceries so that it makes it easier when I shop.
+2. As a student, I want to use the to-do list feature so that I can keep track of my completed homework assignments.
+3. As a real estate agent, I want to use the to-do list and contact form features so that I can help my clients keep track of tasks when purchasing property.
 
 ### Wireframes
 

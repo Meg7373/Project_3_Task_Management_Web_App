@@ -28,13 +28,13 @@ function TodoList () {
     }
 
     function completeTask(index) {
-      const completedTasks = tasks.map ((task,index)=> {
+      const completedTasks = tasks.map ((tasks,index)=> {
         if (setTasks==index)
           return {...tasks, isDone:!tasks.isDone}
         else
           return tasks
-        }
-      )
+        })
+      setTasks(completedTasks)
     }
   
   return (
@@ -66,7 +66,7 @@ function TodoList () {
                 </button>
                 <button
                   className='complete-button'
-                  onClick={(setTasks) => (completeTask(setTasks,index))}>
+                  onClick={(setTasks) => (completeTask(tasks, index))}>
                   Complete 
                 </button>
             </li>
