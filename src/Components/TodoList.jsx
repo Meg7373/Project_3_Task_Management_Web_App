@@ -27,13 +27,14 @@ function TodoList () {
       setTasks(updatedTasks);
     }
 
-    function completeTask (index) {
-      
-      if (index < tasks.length - 1){
-        const updatedTasks = [...tasks];
-        [updatedTasks[index], updatedTasks[index + 1]] = [updatedTasks[index + 1], updatedTasks[index]];
-        setTasks(updatedTasks);
-      }
+    function completeTask(index) {
+      const completedTasks = tasks.map ((task,index)=> {
+        if (setTasks==index)
+          return {...tasks, isDone:!tasks.isDone}
+        else
+          return tasks
+      })
+      setTasks (completedTasks)
     }
   
   return (
@@ -57,7 +58,7 @@ function TodoList () {
         {tasks.map((task, index) => 
             <li key={index}>
                 <span className='text'>{task.name}</span>
-                <span className='text'>{task.isDone ? "Done" : "Not Yet"}</span>
+                <span className='text'>{task.isDone ? "":""}</span>
                 <button
                   className='delete-button'
                   onClick={() => deleteTask(index)}>
@@ -65,11 +66,10 @@ function TodoList () {
                 </button>
                 <button
                   className='complete-button'
-                  onClick={() => completeTask(index)}>
+                  onClick={(tasks) => (completeTask(tasks,index))}>
                   Complete 
                 </button>
             </li>
-            
           )}
       </ol>
       </div>
