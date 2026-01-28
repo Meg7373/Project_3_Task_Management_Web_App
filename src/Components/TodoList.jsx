@@ -33,8 +33,8 @@ function TodoList () {
           return {...tasks, isDone:!tasks.isDone}
         else
           return tasks
-      })
-      setTasks (completedTasks)
+        }
+      )
     }
   
   return (
@@ -66,7 +66,7 @@ function TodoList () {
                 </button>
                 <button
                   className='complete-button'
-                  onClick={(tasks) => (completeTask(tasks,index))}>
+                  onClick={(setTasks) => (completeTask(setTasks,index))}>
                   Complete 
                 </button>
             </li>
