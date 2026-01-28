@@ -2,7 +2,11 @@ import React, { useState } from 'react'
 
 function TodoList () {
   
-    const [tasks, setTasks] = useState(["Eat Breakfast", "Make the bed", "Do laundry"]);
+    const [tasks, setTasks] = useState([
+      {name: "Eat Breakfast", isDone: false  },
+      {name: "Make your bed", isDone: true  },
+      {name: "Do the Laundry", isDone: false  }])
+
     const [newTask, setNewTask] = useState("")
 
     function handleInputChange(event){
@@ -52,7 +56,8 @@ function TodoList () {
       <ol>
         {tasks.map((task, index) => 
             <li key={index}>
-                <span className='text'>{task}</span>
+                <span className='text'>{task.name}</span>
+                <span className='text'>{task.isDone ? "Done" : "Not Yet"}</span>
                 <button
                   className='delete-button'
                   onClick={() => deleteTask(index)}>
@@ -64,6 +69,7 @@ function TodoList () {
                   Complete 
                 </button>
             </li>
+            
           )}
       </ol>
       </div>
