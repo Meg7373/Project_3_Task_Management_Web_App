@@ -38,5 +38,3 @@ The website application offers a navigation bar that allows the user to switch b
 
 ### LinkedIn Profile Link:
 * www.linkedin.com/in/meaghann-wallace
-
-# Project_3_Task_Management_Web_App
