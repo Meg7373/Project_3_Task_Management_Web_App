@@ -36,20 +36,11 @@ button {
   background-color: green;
 }
 
-.line {
-  text-decoration: line-through;
-}
-
 .delete-button, .complete-button{
   padding: 8px 12px;
   font-size: 1.4rem;
   margin-left: 10px;
 }
-
-.strikethrough {
-  text-decoration: line-through;
-}
-
 
 input[type="text"]{
   font-size: 1.6rem;
@@ -79,4 +70,12 @@ li{
   flex: 1;
   flex-shrink: 1;
   flex-basis: 0%;
+}
+
+.router {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  background-color: rgb(243, 222, 252);
+  padding: 7px;
 }

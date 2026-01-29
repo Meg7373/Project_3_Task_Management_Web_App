@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       {/* Navigation */}
-      <nav>
+      <nav className='router'>
         <Link to="/NavBar">NavBar</Link> |{" "}
         <Link to="/TodoList">TodoList</Link> |{" "}
         <Link to="/ContactForm">ContactForm</Link>
