@@ -2,7 +2,12 @@ import React, { useState } from 'react'
 
 function TodoList () {
   
-    const [tasks, setTasks] = useState(["Eat Breakfast", "Make the bed", "Do laundry"]);
+    const [tasks, setTasks] = useState(
+      [
+      {task: "Eat Breakfast", isDone: true},
+      {task: "Make the bed", isDone: false},
+      {task: "Do the Laundry", isDone: true}
+      ])
     const [newTask, setNewTask] = useState("")
 
     function handleInputChange(event){
@@ -23,13 +28,13 @@ function TodoList () {
       setTasks(updatedTasks);
     }
 
-    function completeTask (index) {
-      
-     const completedTasks = tasks.map ((tasks,index)=> {
-        if (setTasks==index)
-          return {...tasks, isDone:!tasks.isDone}
+    function completeTask (taskIndex) {
+
+     const completedTasks = tasks.map ((task,index)=> {
+        if (taskIndex==index)
+          return {...task, isDone:!task.isDone}
         else
-          return tasks
+          return task
         })
       setTasks(completedTasks)
     }
@@ -55,7 +60,8 @@ function TodoList () {
       <ol>
         {tasks.map((task, index) => 
             <li key={index}>
-                <span className='text'>{task}</span>
+                <span className='text'>{task.task}</span>
+                <span className='text'>{task.isDone ? "Done" : "Not yet"}</span>
                 <button
                   className='delete-button'
                   onClick={() => deleteTask(index)}>
@@ -63,7 +69,7 @@ function TodoList () {
                 </button>
                 <button
                   className='complete-button'
-                  onClick={() => completeTask(task,index)}>
+                  onClick={() => completeTask(index)}>
                   Complete 
                 </button>
             </li>
