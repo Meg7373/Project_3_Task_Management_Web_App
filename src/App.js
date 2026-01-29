@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import TodoList from './Components/TodoList';
 import NavBar from './Components/NavBar';
 import ContactForm from './Components/ContactForm'
@@ -14,9 +15,9 @@ function App() {
         <Link to="/ContactForm">ContactForm</Link>
       </nav>
       <Routes>
-        <Route path="/NavBar" element={<NavBar />} />
-        <Route path="/TodoList" element={<TodoList />} />
-        <Route path="/ContactForm" element={<ContactForm />} />
+        <Route path="/navbar" element={<NavBar />} />
+        <Route path="/todolist" element={<TodoList />} />
+        <Route path="/contactform" element={<ContactForm />} />
       </Routes>
     </BrowserRouter>
   );
