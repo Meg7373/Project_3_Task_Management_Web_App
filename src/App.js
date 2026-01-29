@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-      {/* Navigation */}
       <nav className='router'>
         <Link to="/TodoList">TodoList</Link> |{" "}
         <Link to="/ContactForm">ContactForm</Link>
