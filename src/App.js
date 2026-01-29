@@ -9,17 +9,15 @@ function App() {
     <BrowserRouter>
       {/* Navigation */}
       <nav>
-        <Link to="/">NavBar</Link> |{" "}
-        <Link to="/">TodoList</Link> |{" "}
-        <Link to="/about">ContactForm</Link>
+        <Link to="/NavBar">NavBar</Link> |{" "}
+        <Link to="/TodoList">TodoList</Link> |{" "}
+        <Link to="/ContactForm">ContactForm</Link>
       </nav>
       <Routes>
         <Route path="/NavBar" element={<NavBar />} />
         <Route path="/TodoList" element={<TodoList />} />
         <Route path="/ContactForm" element={<ContactForm />} />
       </Routes>
-     
-
     </BrowserRouter>
   );
 }
