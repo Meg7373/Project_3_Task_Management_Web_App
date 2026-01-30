@@ -20,7 +20,7 @@ const ContactForm = () => {
 
   return (
     <Container className="mt-5">
-      <h2>Contact Us</h2>
+      <h2 className='contact'>Contact Us</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formName">
           <Form.Label>First & Last Name</Form.Label>
