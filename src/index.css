@@ -4,6 +4,7 @@ body {
 
 .to-do-list {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: cursive;
   text-align: center;
   margin-top: 100px;
 }
@@ -11,6 +12,17 @@ body {
 h1 {
   font-size: 4rem;
   color: black;
+}
+
+.contact {
+  text-align: center;
+  font-family: cursive;
+  font-size: 4rem;
+  color: rgb(124, 67, 148);
+}
+
+.mb-3 {
+  font-family: cursive;
 }
 
 button {
@@ -25,15 +37,16 @@ button {
 }
 
 .add-button {
-  background-color: yellow;
+  background-color: rgb(255, 255, 0);
+  margin-left: 10px;
 }
 
 .delete-button {
-  background-color: red;
+  background-color: rgb(0, 225, 255);
 }
 
 .complete-button {
-  background-color: green;
+  background-color: rgb(70, 241, 70);
 }
 
 .delete-button, .complete-button{
@@ -48,6 +61,7 @@ input[type="text"]{
   border: 2px solid rgb(196, 3, 196);
   border-radius: 5px;
   color: rgb(84, 3, 103);
+  margin-bottom: 20px;
 }
 
 ol{
@@ -58,7 +72,7 @@ li{
   font-size: 2rem;
   font-weight: bold;
   padding: 15px;
-  background-color: gray;
+  background-color: rgb(243, 222, 252);
   margin-bottom: 10px;
   border: 3px solid rgb(5, 0, 0);
   border-radius: 5px;
