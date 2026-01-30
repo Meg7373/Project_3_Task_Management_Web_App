@@ -32,7 +32,15 @@ The website application offers a navigation bar that allows the user to switch b
 
 ### Wireframes
 
+![To-Do List Website Page](/Wireframes/TodoList.jpg)
+
+![Contact Us Website Page](/Wireframes/ContactForm.png)
+
 ### Website Pages
+
+![To-Do List Website Page](/src/Website_Images/TodoListPage.png)
+
+![Contact Us Website Page](/src/Website_Images/ContactUsPage.png)
 
 ### Meaghann Wallace
 
